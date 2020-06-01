@@ -11,10 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.fullscreen_usenotch).setOnClickListener {
-            startActivity(Intent(this, FullScreenUseNotchActivity::class.java))
+            startActivity(Intent(this, FullScreenUseNotchNotchScreenActivity::class.java))
         }
         findViewById<Button>(R.id.fullscreen_nousenotch).setOnClickListener {
-            startActivity(Intent(this, FullScreenNoUseNotchActivity::class.java))
+            startActivity(Intent(this, FullScreenNoUseNotchNotchScreenActivity::class.java))
         }
     }
 }

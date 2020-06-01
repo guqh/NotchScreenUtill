@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FullScreenNoUseNotchActivity" />
-        <activity android:name=".FullScreenUseNotchActivity" />
+        <activity android:name=".FullScreenNoUseNotchNotchScreenActivity" />
+        <activity android:name=".FullScreenUseNotchNotchScreenActivity" />
     </application>
 
 </manifest>

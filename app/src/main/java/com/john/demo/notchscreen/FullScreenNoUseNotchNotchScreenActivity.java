@@ -3,18 +3,18 @@ package com.john.demo.notchscreen;
 import android.os.Bundle;
 
 import com.john.tools.notchscreen.NotchTools;
-import com.john.tools.notchscreen.base.BaseActivity;
+import com.john.tools.notchscreen.base.BaseNotchScreenActivity;
 
 /**
  * 全屏但不占用刘海屏区域
  */
-public class FullScreenNoUseNotchActivity extends BaseActivity {
+public class FullScreenNoUseNotchNotchScreenActivity extends BaseNotchScreenActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_screen_no_use_notch);
-        NotchTools.getFullScreenTools().fullScreenDontUseStatusForActivityOnCreate(this);
+        NotchTools.getFullScreenTools().fullScreenDontUseStatus(this);
     }
 
     /**

@@ -11,7 +11,7 @@ import com.john.tools.notchscreen.R;
 /**
  * 全部 activity 的最 基类
  */
-public class BaseActivity extends AppCompatActivity {
+public class BaseNotchScreenActivity extends AppCompatActivity {
 
     /**
      * 刘海容器

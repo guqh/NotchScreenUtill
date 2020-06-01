@@ -6,14 +6,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.john.tools.notchscreen.NotchTools;
-import com.john.tools.notchscreen.base.BaseActivity;
+import com.john.tools.notchscreen.base.BaseNotchScreenActivity;
 import com.john.tools.notchscreen.core.NotchProperty;
 import com.john.tools.notchscreen.core.OnNotchCallBack;
 
 /**
  * 全屏且占用刘海屏区域
  */
-public class FullScreenUseNotchActivity extends BaseActivity implements OnNotchCallBack {
+public class FullScreenUseNotchNotchScreenActivity extends BaseNotchScreenActivity implements OnNotchCallBack {
 
 
     private ImageView mBackView;
