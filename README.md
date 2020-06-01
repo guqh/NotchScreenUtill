@@ -9,18 +9,20 @@ ANDROID P全面屏手机
 
 ##使用方法
 - Add it in your root build.gradle at the end of repositories:
-
-	allprojects {
+```
+allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
+```
 - Add the dependency
-
-	dependencies {
-	        implementation 'com.github.guqh:NotchScreenUtill:Tag'
+```
+dependencies {
+	        implementation 'com.github.guqh:NotchScreenUtill:v1.0.0'
 	}
+```
 - 项目中的Activity都需要继承BaseNotchScreenActivity
 - 适配全屏但不占用刘海情况
 ```
