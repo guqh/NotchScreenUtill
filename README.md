@@ -8,7 +8,19 @@ VIVO手机
 ANDROID P全面屏手机
 
 ##使用方法
-- 
+- Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+- Add the dependency
+
+	dependencies {
+	        implementation 'com.github.guqh:NotchScreenUtill:Tag'
+	}
 - 项目中的Activity都需要继承BaseNotchScreenActivity
 - 适配全屏但不占用刘海情况
 ```
