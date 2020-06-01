@@ -8,9 +8,22 @@ VIVO手机
 ANDROID P全面屏手机
 
 ##使用方法
-- 1. 
-- 2. 项目中的Activity都需要继承BaseNotchScreenActivity
-- 3. 适配全屏但不占用刘海情况
-     ```
-     NotchTools.getFullScreenTools().fullScreenDontUseStatus(this);
-     ```
+- 
+- 项目中的Activity都需要继承BaseNotchScreenActivity
+- 适配全屏但不占用刘海情况
+```
+NotchTools.getFullScreenTools().fullScreenDontUseStatus(this);
+```
+- 适配全屏且占用刘海情况
+注： 对于需要使用刘海区域的适配中，比如返回按钮，或者标题栏等等。。。需要在OnNotchCallBack回调的onNotchPropertyCallback方法中获取状态栏高度notchHeight，然后自行去为自己的布局或者View做下移操作
+```
+NotchTools.getFullScreenTools().fullScreenUseStatus(this, new OnNotchCallBack() {
+            @Override
+            public void onNotchPropertyCallback(NotchProperty notchProperty) {
+                int marginTop = notchProperty.getMarginTop();
+                RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mBackView.getLayoutParams();
+                layoutParams.topMargin += marginTop;
+                mBackView.setLayoutParams(layoutParams);
+            }
+        });
+```
